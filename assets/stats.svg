@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 128" width="1200" height="128" role="img" aria-label="10+ years shipping full-stack; $1M+ per year platform revenue shipped; 108K+ plugin downloads; 1,250+ B2B accounts modeled">
+  <title>By the numbers</title>
+
+  <defs>
+    <clipPath id="fr">
+      <rect x="1" y="1" width="1198" height="126" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#fr)">
+    <rect x="0" y="0" width="1200" height="128" fill="#101012"/>
+
+    <!-- accent top edge -->
+    <rect x="0" y="0" width="1200" height="2" fill="#4ade80" opacity="0.55"/>
+
+    <!-- dividers -->
+    <line x1="300.5" y1="12" x2="300.5" y2="116" stroke="#1e1e22"/>
+    <line x1="600.5" y1="12" x2="600.5" y2="116" stroke="#1e1e22"/>
+    <line x1="900.5" y1="12" x2="900.5" y2="116" stroke="#1e1e22"/>
+
+    <g text-anchor="middle">
+      <g>
+        <text x="150" y="66" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="32" font-weight="700" fill="#4ade80">10+</text>
+        <text x="150" y="94" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" fill="#8a8a93">Years shipping full-stack</text>
+      </g>
+      <g>
+        <text x="450" y="66" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="32" font-weight="700" fill="#4ade80">$1M+/yr</text>
+        <text x="450" y="94" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" fill="#8a8a93">Platform revenue shipped</text>
+      </g>
+      <g>
+        <text x="750" y="66" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="32" font-weight="700" fill="#4ade80">108K+</text>
+        <text x="750" y="94" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" fill="#8a8a93">Plugin downloads shipped to users</text>
+      </g>
+      <g>
+        <text x="1050" y="66" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="32" font-weight="700" fill="#4ade80">1,250+</text>
+        <text x="1050" y="94" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" fill="#8a8a93">B2B accounts modeled with ML</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="0.5" y="0.5" width="1199" height="127" rx="14" fill="none" stroke="#26262c"/>
+</svg>
