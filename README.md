@@ -3,10 +3,10 @@
 </p>
 
 <p align="center">
-  <a href="https://andrewgunn.dev"><img src="https://img.shields.io/badge/andrewgunn.dev-0a0a0b?style=for-the-badge&logo=vercel&logoColor=4ade80&labelColor=0a0a0b" alt="Website"></a>
-  <a href="https://www.linkedin.com/in/andrewmgunn"><img src="https://img.shields.io/badge/LinkedIn-0a0a0b?style=for-the-badge&logo=linkedin&logoColor=4ade80&labelColor=0a0a0b" alt="LinkedIn"></a>
-  <a href="https://wordpress.org/plugins/search/andrew+gunn/"><img src="https://img.shields.io/badge/WordPress.org-0a0a0b?style=for-the-badge&logo=wordpress&logoColor=4ade80&labelColor=0a0a0b" alt="WordPress.org plugins"></a>
-  <a href="mailto:andrewgunn31@gmail.com"><img src="https://img.shields.io/badge/Email-0a0a0b?style=for-the-badge&logo=maildotru&logoColor=4ade80&labelColor=0a0a0b" alt="Email"></a>
+  <a href="https://andrewgunn.dev"><img src="assets/btn-web.svg" height="44" alt="andrewgunn.dev"></a>
+  <a href="https://www.linkedin.com/in/andrewmgunn"><img src="assets/btn-linkedin.svg" height="44" alt="LinkedIn"></a>
+  <a href="https://wordpress.org/plugins/search/andrew+gunn/"><img src="assets/btn-wordpress.svg" height="44" alt="WordPress.org plugins"></a>
+  <a href="mailto:andrewgunn31@gmail.com"><img src="assets/btn-email.svg" height="44" alt="Email"></a>
 </p>
 
 <p align="center">
@@ -180,28 +180,12 @@ Production-ready .NET library for cryptographically secure API key generation wi
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/SQL_Server-0a0a0b?style=flat-square&logo=microsoftsqlserver&logoColor=CC2927&labelColor=0a0a0b" alt="SQL Server">
-  <img src="https://img.shields.io/badge/EF_Core-0a0a0b?style=flat-square&logo=nuget&logoColor=4ade80&labelColor=0a0a0b" alt="EF Core">
-  <img src="https://img.shields.io/badge/MassTransit-0a0a0b?style=flat-square&logo=apachekafka&logoColor=4ade80&labelColor=0a0a0b" alt="MassTransit">
-  <img src="https://img.shields.io/badge/gRPC-0a0a0b?style=flat-square&logo=grpc&logoColor=4ade80&labelColor=0a0a0b" alt="gRPC">
-  <img src="https://img.shields.io/badge/OpenAI_API-0a0a0b?style=flat-square&logo=openai&logoColor=4ade80&labelColor=0a0a0b" alt="OpenAI API">
-  <img src="https://img.shields.io/badge/Claude_Code-0a0a0b?style=flat-square&logo=anthropic&logoColor=4ade80&labelColor=0a0a0b" alt="Claude Code">
-  <img src="https://img.shields.io/badge/Optimizely_CMS_%26_Commerce-0a0a0b?style=flat-square&logo=optimizely&logoColor=4ade80&labelColor=0a0a0b" alt="Optimizely CMS &amp; Commerce">
-  <img src="https://img.shields.io/badge/WordPress-0a0a0b?style=flat-square&logo=wordpress&logoColor=4ade80&labelColor=0a0a0b" alt="WordPress">
-</p>
-
-<p align="center">
-  <sub><b>Architecture:</b> Microservices · Vertical Slice · Event-Driven · DDD · TDD · BFF</sub>
+  <img src="assets/extras.svg" alt="SQL Server · EF Core · MassTransit · gRPC · OpenAI API · Claude Code · Optimizely CMS &amp; Commerce · WordPress — Architecture: Microservices, Vertical Slice, Event-Driven, DDD, TDD, BFF" width="100%">
 </p>
 
 <br>
 
-## ▍By the numbers
-
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=amg262&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0a0a0b&title_color=4ade80&text_color=8a8a93&icon_color=4ade80&ring_color=4ade80" alt="Andrew Gunn's GitHub stats">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amg262&layout=compact&langs_count=8&hide_border=true&bg_color=0a0a0b&title_color=4ade80&text_color=8a8a93" alt="Most used languages">
-</p>
+## ▍Build history
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=amg262&bg_color=0a0a0b&color=e7e7ea&line=4ade80&point=4ade80&area=true&area_color=4ade80&hide_border=true&custom_title=Contribution%20activity" alt="Contribution activity graph" width="100%">
@@ -226,8 +210,8 @@ Production-ready .NET library for cryptographically secure API key generation wi
 </p>
 
 <p align="center">
-  <a href="https://andrewgunn.dev"><img src="https://img.shields.io/badge/Read_the_full_story_→-4ade80?style=for-the-badge&labelColor=0a0a0b&color=0a0a0b" alt="andrewgunn.dev"></a>
-  <a href="mailto:andrewgunn31@gmail.com"><img src="https://img.shields.io/badge/Get_in_touch_→-4ade80?style=for-the-badge&labelColor=0a0a0b&color=0a0a0b" alt="Email Andrew"></a>
+  <a href="https://andrewgunn.dev"><img src="assets/btn-web.svg" height="48" alt="andrewgunn.dev"></a>
+  <a href="mailto:andrewgunn31@gmail.com"><img src="assets/btn-email.svg" height="48" alt="Email Andrew"></a>
 </p>
 
 <p align="center">
