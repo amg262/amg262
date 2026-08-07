@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 52" width="196" height="52" role="img" aria-label="WordPress.org plugins">
-  <title>WordPress.org plugins</title>
-  <rect x="0.5" y="0.5" width="195" height="51" rx="10" fill="#101012" stroke="#1e1e22"/>
-  <g transform="translate(20,16)">
-    <circle cx="10" cy="10" r="8.6" fill="none" stroke="#4ade80" stroke-width="1.6"/>
-    <text x="10" y="14.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10.5" font-weight="700" fill="#4ade80">W</text>
-  </g>
-  <text x="54" y="31.5" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" fill="#e7e7ea">WordPress.org</text>
-</svg>
