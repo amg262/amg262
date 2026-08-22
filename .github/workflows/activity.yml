@@ -2,9 +2,11 @@ name: Refresh activity
 
 # Keeps the activity line at the top of the README current.
 #
-# The default GITHUB_TOKEN only sees public contributions. To have the numbers
-# match what the profile page shows (private contributions included), add a
-# classic PAT with the `read:user` scope as a repo secret named PROFILE_TOKEN.
+# The default GITHUB_TOKEN can read the contribution calendar (which counts
+# private work) but not the commit and PR totals behind it, so the line falls
+# back to contribution counts alone. Add a classic PAT with the `read:user`
+# scope as a repo secret named PROFILE_TOKEN and the commit, PR, and repo
+# numbers appear too.
 
 on:
   schedule:

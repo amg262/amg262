@@ -13,7 +13,11 @@ const QUERY = `
 query($login: String!, $from: DateTime!, $to: DateTime!, $from30: DateTime!) {
   user(login: $login) {
     year: contributionsCollection(from: $from, to: $to) {
+      totalCommitContributions
       totalPullRequestContributions
+      totalIssueContributions
+      totalPullRequestReviewContributions
+      restrictedContributionsCount
       contributionCalendar {
         totalContributions
         weeks { contributionDays { date contributionCount } }
@@ -32,17 +36,35 @@ const iso = (d) => d.toISOString().replace(/\.\d+Z$/, 'Z');
 const num = (n) => n.toLocaleString('en-US');
 const plural = (n, word) => `${num(n)} ${word}${n === 1 ? '' : 's'}`;
 
+const calendarDays = (weeks) =>
+  weeks.flatMap((w) => w.contributionDays).sort((a, b) => a.date.localeCompare(b.date));
+
 // Consecutive days with at least one contribution, counting back from today.
 // A quiet today doesn't break the streak — the day isn't over yet.
-function streakFrom(weeks) {
-  const days = weeks
-    .flatMap((w) => w.contributionDays)
-    .sort((a, b) => a.date.localeCompare(b.date));
+function streakFrom(days) {
   let i = days.length - 1;
   if (i >= 0 && days[i].contributionCount === 0) i -= 1;
   let streak = 0;
   for (; i >= 0 && days[i].contributionCount > 0; i -= 1) streak += 1;
   return streak;
+}
+
+const sumLast = (days, n) =>
+  days.slice(-n).reduce((total, d) => total + d.contributionCount, 0);
+
+// The contribution calendar counts private work; the per-type totals only count
+// what the token can actually see. With the default GITHUB_TOKEN that gap is
+// large enough to make the commit and PR counts read as an undercount, so those
+// chips are only rendered when the token resolves the whole picture — i.e. when
+// a PROFILE_TOKEN PAT is configured.
+function hasFullVisibility(year) {
+  if (year.restrictedContributionsCount > 0) return false;
+  const visible =
+    year.totalCommitContributions +
+    year.totalPullRequestContributions +
+    year.totalIssueContributions +
+    year.totalPullRequestReviewContributions;
+  return visible >= year.contributionCalendar.totalContributions * 0.75;
 }
 
 async function fetchActivity() {
@@ -72,15 +94,23 @@ async function fetchActivity() {
 
 function render(user) {
   const { year, recent } = user;
-  const streak = streakFrom(year.contributionCalendar.weeks);
-  const repos = recent.commitContributionsByRepository.length;
+  const calendar = year.contributionCalendar;
+  const days = calendarDays(calendar.weeks);
+  const streak = streakFrom(days);
 
   const chips = [];
   if (streak >= 2) chips.push(`${num(streak)}-day streak`);
-  chips.push(`${plural(year.contributionCalendar.totalContributions, 'contribution')} · 12mo`);
-  chips.push(`${plural(recent.totalCommitContributions, 'commit')} · 30d`);
-  chips.push(`${plural(year.totalPullRequestContributions, 'PR')} · 12mo`);
-  if (repos > 0) chips.push(`${plural(repos, 'repo')} · 30d`);
+
+  if (hasFullVisibility(year)) {
+    const repos = recent.commitContributionsByRepository.length;
+    chips.push(`${plural(recent.totalCommitContributions, 'commit')} · 30d`);
+    chips.push(`${plural(year.totalPullRequestContributions, 'PR')} · 12mo`);
+    chips.push(`${plural(calendar.totalContributions, 'contribution')} · 12mo`);
+    if (repos > 0) chips.push(`${plural(repos, 'repo')} · 30d`);
+  } else {
+    chips.push(`${plural(sumLast(days, 30), 'contribution')} · 30d`);
+    chips.push(`${num(calendar.totalContributions)} · 12mo`);
+  }
 
   return chips.map((c) => `\`${c}\``).join(' · ');
 }
