@@ -3,7 +3,7 @@
 Senior full-stack engineer — enterprise .NET, React, cloud. Schema to deploy, usually solo.
 
 <!-- activity:start -->
-`609 contributions · 12mo` · `240 commits · 30d` · `162 PRs · 12mo` · `17 repos · 30d`
+`611 contributions · 12mo` · `48 commits · 30d` · `26 PRs · 12mo` · `13 repos · 30d`
 <!-- activity:end -->
 
 **Now** · Senior Full-Stack Engineer at OneDigital — corporate web platform, CI/CD, framework upgrades. Getting AI past the demo stage and into production.
